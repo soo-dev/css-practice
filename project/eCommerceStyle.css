@@ -1,0 +1,237 @@
+:root {
+  --colorOneSix: #d0edf5;
+  --colorTwoSeven: #e3f0d6;
+  --colorThreeEight: #fdfaba;
+  --colorFour: #ebebeb;
+  --colorFive: #fdc3c2;
+  --textGreyColor: rgba(150, 150, 150, 0.842);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.fourGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.header__title {
+  cursor: pointer;
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__column ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+.header__nav span {
+  text-transform: uppercase;
+  color: var(--textGreyColor);
+  text-decoration: underline;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.header__nav li {
+  font-size: 13px;
+}
+
+.header__nav li:last-child {
+  display: block;
+  padding-bottom: 50px;
+}
+
+.main {
+  grid-auto-rows: 30vh;
+  grid-gap: 20px;
+}
+
+.main .grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .grid__item--subTitle {
+  cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 20px 0px 20px 20px;
+  font-size: 10px;
+  color: var(--textGreyColor);
+}
+
+.main .grid__item--title {
+  font-size: 20px;
+  margin: 20px 0px 20px 20px;
+}
+
+.main .grid__item--link {
+  align-items: flex-end;
+}
+
+.main .grid__item--content {
+  font-size: 13px;
+  margin: 20px 15px 20px 20px;
+  color: var(--textGreyColor);
+}
+
+.main .grid__item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOneSix);
+}
+
+.grid__item:first-child .grid__item--link {
+  display: block;
+  margin: 270px 20px 20px 20px;
+  color: black;
+  text-decoration: underline;
+}
+
+.main .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F124935504F501FA1149D64);
+}
+
+.main .grid__item:nth-child(3) {
+  background-color: var(--colorTwoSeven);
+}
+
+.main .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/5d/d7/4e/5dd74eb1a270a2cff2d8e920aad90ee3.jpg);
+}
+
+.main .grid__item:nth-child(5) {
+  background-color: var(--colorThreeEight);
+}
+
+.main .grid__item:nth-child(6) {
+  background-color: var(--colorFour);
+}
+
+.grid__item:nth-child(6) .grid__item--link {
+  display: block;
+  margin: 20px 20px 20px 20px;
+  color: var(--textGreyColor);
+  text-decoration: none;
+}
+
+.main .grid__item:nth-child(7) {
+  background-image: url(https://media.licdn.com/dms/image/C4E1BAQHbhDjBQwnx2A/company-background_10000/0?e=2159024400&v=beta&t=vyOzrJ57MHhz60lM4eYKuVuWxvZSM4x_pN8U1C4tu2U);
+}
+
+.main .grid__item:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid__item:nth-child(8) .grid__item--link {
+  display: block;
+  margin: 330px 20px 20px 20px;
+  color: black;
+  text-decoration: underline;
+}
+
+.main .grid__item:nth-child(9) {
+  grid-row: span 2;
+  background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2017/03/anicorn-jiwoong-joong-hidden-time-2.png);
+}
+
+.main .grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F122D70454EA0C02C30);
+}
+
+.main .grid__item:nth-child(11) {
+  background-image: url(http://iamdesigncorp.co.kr/wp-content/uploads/2019/06/2.jpg);
+}
+
+.main .grid__item:nth-child(12) {
+  background-image: url(https://techcrunch.com/wp-content/uploads/2017/05/onedrive-illo3.jpg?w=730&crop=1);
+}
+
+.main .grid__item:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorTwoSeven);
+}
+
+.main .grid__item:nth-child(14) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmo3VMYknjUPkFQRJFtMwVDIIhdijdnRtuOp4t7As_D59r1WB);
+}
+
+.main .grid__item:last-child {
+  background-color: var(--colorThreeEight);
+}
+
+.grid__item:last-child .grid__item--input {
+  margin: 30px 20px 20px 20px;
+  display: block;
+  width: 360px;
+  height: 40px;
+}
+
+.grid__item:last-child .grid__item--button {
+  display: block;
+  background-color: #fff380;
+  width: 360px;
+  height: 40px;
+  margin: 30px 20px 20px 20px;
+}
+
+.grid__item--button div {
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  height: 30vh;
+  margin-top: 30px;
+}
+
+.footer .footer__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__nav span {
+  text-transform: uppercase;
+  color: rgba(150, 150, 150, 0.842);
+  text-decoration: underline;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.footer__nav li {
+  font-size: 13px;
+}

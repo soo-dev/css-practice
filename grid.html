@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid</title>
+    <style>
+      .father {
+        display: grid;
+        grid-template-columns: 300px 500px;
+        grid-template-rows: 300px 120px;
+        grid-gap: 5px;
+        grid-auto-columns: 60px;
+        grid-auto-flow: column;
+      }
+      .box {
+        background-color: darkslateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+}
+
+a {
+  text-decoration: none;
+  color: #2f3640;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  grid-gap: 20px;
+  height: 40vh;
+}
+
+.main .main__item:first-child {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./image/ColorfulECommerce.jpg);
+}
+
+.main .main__item--title {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 40vh;
+  font-size: 25px;
+  font-weight: bold;
+}
